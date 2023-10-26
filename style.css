@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+
+@font-face {
+    font-family: font1;
+    src: url(./fonts/kalimar/Kalimar.otf);
+}
+
+@font-face {
+    font-family: font2;
+    src: url(./fonts/summer_dream_sans/Summer\ Dream\ Sans\ DEMO\ .ttf);
+}
+
+@font-face {
+    font-family:font3 ;
+    src: url(./fonts/witchy_whiskers/Witchy\ Whiskers\ Free.ttf);
+}
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #67963c;
+}
+
+
+h1{
+font-family: font2;
+position: absolute;
+font-size: 4em;
+left: 50%;
+transform: translate(-50%);
+color: #7afd00;
+text-shadow: 5px 5px 1px #000; 
+}
+
+
+
+.container{
+
+height: 460px;
+width: 800px;
+overflow: hidden;
+position: absolute; 
+top: 50%; 
+left: 50%; 
+transform: translate(-50%, -50%); 
+
+}
+
+.navegacao{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar{
+background-color: #fffffffa;
+width:30px;
+height: 5px;
+margin:6px;
+transition: .3s;
+cursor: pointer;
+}
+
+input{
+    display: none;
+}
+
+.imagens{
+    display: flex;
+    width: 600%;
+    height: 100%;
+}
+
+.imagem{
+    width: 16.6666666667%;
+    transition: .5s;
+}
+
+.imagem img{ 
+width: 100%;
+height: 100%;
+border-radius: 10em;
+}
+
+
+#imagem1:checked ~ .img1{
+    margin-left: 0;
+}
+
+#imagem2:checked ~ .img1{
+    margin-left: -16.6666666667%; 
+}
+
+#imagem3:checked ~ .img1{
+    margin-left: -33,3333333333%;;
+}
+
+
+
+#imagem4:checked ~ .img1{
+    margin-left: -50%;
+}
+
+#imagem5:checked ~ .img1 {
+    margin-left: -66.6666666667%;
+}
+
+#imagem6:checked ~ .img1 {
+    margin-left: -83.3333333333%;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    text-shadow: 2px 4px 1px rgb(0, 0, 0);
+    color: #02ff41;
+    font-family:font2 ;
+    font-size: 1em;
+}
+
